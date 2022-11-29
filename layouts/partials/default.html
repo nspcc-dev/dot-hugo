@@ -2,7 +2,7 @@
 <section class="single section-sm pb-0">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-4">
         <div class="sidebar">
           <a
             class="back-btn"
@@ -24,7 +24,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-8">
         <div class="p-lg-5 p-4 bg-white" id="content">
           <h2 class="mb-5" id="title">{{ .Title }}</h2>
           {{ if .Content }}
@@ -99,6 +99,7 @@ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
   <a href="{{.Permalink}}">
     {{safeHTML .Params.Pre}}{{or .Params.menuTitle .LinkTitle .Title}}{{safeHTML
     .Params.Post}}
+    <i class="ti-angle-right"></i>
   </a>
   {{ $numberOfPages := (add (len .Pages) (len .Sections)) }} {{ if ne
   $numberOfPages 0 }}
