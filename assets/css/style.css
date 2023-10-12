@@ -581,6 +581,10 @@ textarea.form-control {
   top: 17px;
 }
 
+ul.list-styled>li::before {
+  content: none;
+}
+
 .post-meta {
   color: var(--text-color);
   font-style: italic;
@@ -790,14 +794,23 @@ code {
 }
 
 .back-btn {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 14px;
   position: relative;
+  color: #7f7f7f;
+}
+
+.back-btn li {
+  margin-left: 20px;
+  color: inherit;
 }
 
 .back-btn::before {
   position: absolute;
   font-family: 'themify';
   content: "\e6bc";
-  font-size: 25px;
+  font-size: 18px;
   height: 30px;
   width: 40px;
   background-color: var(--white-color);
